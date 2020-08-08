@@ -1,0 +1,318 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5% ; /*since default is 16px and we want to set it as  10px .so , 6.25  */
+    
+}
+
+body{
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    color: #333;
+  
+}
+
+.header{
+    height: 120vh;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 8rem;
+    letter-spacing:.2rem;
+    
+}
+
+.container{
+    width: 70%;
+    margin: 7rem auto;
+    box-shadow: 0 0 0.2rem rgba(0,0,0, .4);
+}
+
+.container__nav{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgba(22, 25, 20,0.4);
+    border-bottom: 0 solid black;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+.list{
+    padding-top: 1rem ;
+    padding-left: 1.5rem;
+}
+
+.contact{
+  float: right;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+}
+
+.icon{ 
+    float: left;
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    list-style: none;
+    margin-left: .3rem;
+}
+
+.icon-red{
+    background-color: tomato;
+}
+
+.icon-yellow{
+    background-color: yellow;
+}
+
+.icon-green{
+    background-color: yellowgreen;
+}
+
+.header__frame{
+    display: table;
+    width: 100%;
+    border: .5px solid rgba(22, 25, 20,0.4);
+    background-color: #fff;
+}
+
+.header__frame-left{
+    display: table-cell;
+    width: 60%;
+}
+
+.header__frame-right{
+    display: table-cell;
+}
+
+.card{
+    display: block;
+    width: 16rem;
+    height: 20rem;
+    margin-left: 15rem;
+    margin-top: 8rem;
+    background-image: url("my_pic.JPG");
+    background-size: cover;
+    box-shadow: 0 0 1rem rgba(0,0,0, .4);
+    border-radius: 2px;
+    margin-bottom: 3rem;
+}
+
+
+.theme{
+    width: 50%;
+    margin:0 auto ;
+}
+
+.heading__secondary{
+   
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.theme__box{
+    width: 70%;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.paragraph{
+    
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: 100;
+    width: 50%;
+    margin-left: 10rem;  
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.radio{
+    display: none;
+}
+
+
+
+.radio-btn{
+    display: inline-block;  
+    background-color: #f0f0f0;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+    border: 2px solid rgba(22, 25, 20,0.4);
+    position: relative;
+    z-index: 20;
+}
+
+.radio-btn::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgba(22, 25, 20,.4);
+    transform: translate(3px,3px);
+    opacity: 0;
+    
+}
+
+.radio:checked + .radio__label .radio-btn::after{
+   opacity: 1;
+}
+
+
+/* main */
+
+.main-blue{
+    background-color: #15202B ;
+    color: #fff ;
+}
+
+.main-green{
+   background-color: #606B56;
+   color: #f0f0f0;
+}
+
+.main-purple{
+   background-color: #46344E;
+   color: #fff;
+}
+
+
+/* secondary */
+
+
+.sec-green{
+    background-color: #515a48;
+    color: #fff;
+}
+
+.sec-blue{
+   background-color: #192734;
+   color: #fff;
+}
+
+.sec-purple{
+    background-color: #382a3f;
+    color: #fff;
+
+}
+
+
+
+/* blue */
+
+/* :root{
+	--mainColor:#15202B;
+	--secondaryColor:#192734;
+
+	--borderColor:#164D56;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(25, 39, 52, 0.8);
+	--previewShadow:#111921;
+
+
+	--buttonColor:#17a2b8;
+
+
+} */
+
+
+/* default */
+
+/* :root{
+	--mainColor:#eaeaea;
+	--secondaryColor:#fff;
+
+	--borderColor:#c1c1c1;
+
+	--mainText:black;
+	--secondaryText:#4b5156;
+
+	--themeDotBorder:#24292e;
+
+	--previewBg:rgb(251, 249, 243, 0.8);
+	--previewShadow:#f0ead6;
+
+
+	--buttonColor:black;
+
+
+} */
+
+
+/* green */
+
+/* :root{
+	--mainColor:#606B56;
+	--secondaryColor:#515a48;
+
+	--borderColor:#161914;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(81, 90, 72, 0.8);
+	--previewShadow:#2a2f25;
+
+
+	--buttonColor:#669966;
+
+
+} */
+
+
+
+/* purple */
+
+/* :root{
+	--mainColor:#46344E;
+	--secondaryColor:#382a3f;
+
+	--borderColor:#1d1520;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(29, 21, 32, 0.8);
+	--previewShadow:#2b202f;
+
+
+	--buttonColor:#8534a3;
+
+
+} */
